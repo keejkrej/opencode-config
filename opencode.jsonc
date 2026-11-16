@@ -23,10 +23,12 @@
     }
   },
   "mcp": {
+    "composio": {
+      "type": "local",
+      "command": ["npx", "-y", "mcp-remote", "https://connect.composio.dev/mcp"],
     "paper": {
       "type": "local",
-      "command": ["npx", "-y", "mcp-remote", "https://mcp.paper.design"],
-      "enabled": true
+      "command": ["npx", "-y", "mcp-remote", "https://mcp.paper.design"]
     }
   }
 }
