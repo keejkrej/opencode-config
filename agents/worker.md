@@ -1,7 +1,7 @@
 ---
 description: DeepSeek implementation worker. Writes code, runs tests, and reports concisely.
 mode: subagent
-model: morph/morph-dsv41flash
+model: vercel/deepseek/deepseek-v4.1-flash-1017
 permissions:
   - action: edit
     resource: "*"

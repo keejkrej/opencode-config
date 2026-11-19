@@ -1,7 +1,7 @@
 ---
 description: Kimi orchestrator. Plans, delegates, and verifies; never edits files or runs shell commands.
 mode: primary
-model: morph/morph-kimik31
+model: vercel/moonshotai/kimi-k3.1-pro
 permissions:
   - action: edit
     resource: "*"
