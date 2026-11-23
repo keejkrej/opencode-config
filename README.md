@@ -6,7 +6,7 @@ Portable config for [opencode](https://opencode.ai), mirrored into `~/.config/op
 
 | File | Purpose | Copy to |
 | --- | --- | --- |
-| `opencode.jsonc` | Models (Vercel AI Gateway: Kimi as the default model, DeepSeek for built-in `explore`/`general`/`compaction`/`title`/`summary`) and MCP servers (paper via local `paper mcp`; ambient over local HTTP; mobbin over remote HTTP with OAuth) | `~/.config/opencode/opencode.jsonc` |
+| `opencode.jsonc` | Models (Vercel AI Gateway: Kimi as the default model, DeepSeek for built-in `explore`/`general`/`compaction`/`title`/`summary`) and MCP servers (paper via local `paper mcp`; ambient over local HTTP; mobbin over remote HTTP with OAuth; browse via local `browse mcp`) | `~/.config/opencode/opencode.jsonc` |
 | `agents/build.md` | Primary `build` agent: Kimi orchestrator that plans, delegates and verifies; edits and shell are denied | `~/.config/opencode/agents/build.md` |
 | `agents/worker.md` | `worker` subagent: DeepSeek implementer that edits, runs commands/tests and reports back | `~/.config/opencode/agents/worker.md` |
 | `AGENTS.md` | Global instructions loaded in every session: the Ambient memory block | `~/.config/opencode/AGENTS.md` |
@@ -21,6 +21,8 @@ sign in to Vercel AI Gateway with `opencode auth login`.
 
 The `paper` server runs the `paper` CLI that Paper Desktop installs into `~/.paper/bin`;
 add that directory to `PATH` (on Windows: `%USERPROFILE%\.paper\bin` in the user `Path`).
+The `browse` server runs the `browse` CLI from `~/.local/bin`; keep that directory on `PATH`
+(on Windows: `%USERPROFILE%\.local\bin`) and install the browse extension in your Chrome-family browser.
 Sign in to Mobbin once with `opencode mcp auth mobbin` (Pro/Team/Enterprise plan required).
 Check everything with `opencode mcp list`.
 
