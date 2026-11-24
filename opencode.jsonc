@@ -31,8 +31,8 @@
         "oauth": false
       },
       "mobbin": {
-        "type": "remote",
-        "url": "https://api.mobbin.com/mcp"
+        "type": "local",
+        "command": ["npx", "-y", "mcp-remote", "https://api.mobbin.com/mcp"]
       },
       "browse": {
         "type": "local",
